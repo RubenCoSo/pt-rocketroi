@@ -10,49 +10,49 @@ import { Col, Container, Row, ListGroup, Image } from "react-bootstrap";
 
 export default function ProductSpecs() {
   return (
-    <Container>
+    <Container className="productSpecs">
       <Col>
         <ListGroup>
           <ListGroup.Item>
-            <h2 className="KibusL">
-              <Image src={Program} />
+            <h2 className="kibusL">
+              <Image className="specImg" src={Program} />
               Programmable 24h
             </h2>
           </ListGroup.Item>
           <ListGroup.Item>
-            <h2 className="KibusL">
-              <Image src={Agua} />
+            <h2 className="kibusL">
+              <Image className="specImg" src={Agua} />
               Agua siempre disponible
             </h2>
           </ListGroup.Item>
           <ListGroup.Item>
-            <h2 className="KibusL">
-              <Image src={Cantidad} />
+            <h2 className="kibusL">
+              <Image className="specImg" src={Cantidad} />
               Cantidad personalizable
             </h2>
           </ListGroup.Item>
           <ListGroup.Item>
-            <h2 className="KibusL">
-              <Image src={Historial} />
+            <h2 className="kibusL">
+              <Image className="specImg" src={Historial} />
               Histórial de las comidas
             </h2>
           </ListGroup.Item>
           <ListGroup.Item>
-            <h2 className="KibusL">
-              <Image src={FacilUso} />
+            <h2 className="kibusL">
+              <Image className="specImg" src={FacilUso} />
               Fácil de usar y lavar
             </h2>
           </ListGroup.Item>
           <ListGroup.Item>
-            <h2 className="KibusL">
-              <Image src={App} />
+            <h2 className="kibusL">
+              <Image className="specImg" src={App} />
               App para iOS y Android
             </h2>
           </ListGroup.Item>
         </ListGroup>
       </Col>
       <Col>
-        <Image src={Device} />
+        <Image className="dvcImg" src={Device} />
       </Col>
     </Container>
   );

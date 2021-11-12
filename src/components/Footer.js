@@ -8,65 +8,63 @@ import MetodosPago from "../Images/Group 64.png";
 
 export default function Footer() {
   return (
-    <Container>
-      <Col>
-        <Row>
-          <Image src={KibusWhiteLogo} />
-        </Row>
-        <Row>
-          <h2 className="kibusL">Sobre KIBUS</h2>
-        </Row>
-        <Row>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation.
-          </p>
-        </Row>
-      </Col>
-      <Col>
-        <Row>
-          <Image src={KibusWhiteLogo} />
-        </Row>
-        <Row>
-          <h2 className="kibusL">Políticas</h2>
-        </Row>
-        <Row>
-          <ListGroup>
-            <ListGroup.Item>
-              <p>Políticas de Privacidad</p>
-            </ListGroup.Item>
-            <ListGroup.Item>
-              <p>Condiciones de uso</p>
-            </ListGroup.Item>
-            <ListGroup.Item>
-              <p>Cookies</p>
-            </ListGroup.Item>
-            <ListGroup.Item>
-              <p>FAQ</p>
-            </ListGroup.Item>
-          </ListGroup>
-        </Row>
-      </Col>
-      <Col>
-        <Row>
-          <Image src={Facebook} />
-        </Row>
-        <Row>
-          <Image src={Instagram} />
-        </Row>
-        <Row>
-          <Image src={YouTube} />
-        </Row>
-      </Col>
-      <Col>
-        <Row>
-          <h2 className="kibusL">Métodos de pago</h2>
-        </Row>
-        <Row>
-          <Image src={MetodosPago} />
-        </Row>
-      </Col>
-    </Container>
+    <div className="footerBack">
+      <Container className="footer">
+        <Col className="logo">
+          <Row>
+            <Image className="KibusWhiteLogo" src={KibusWhiteLogo} />
+          </Row>
+          <Row>
+            <h2 className="kibusL">Sobre KIBUS</h2>
+          </Row>
+          <Row>
+            <p className="kibusS">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation.
+            </p>
+          </Row>
+        </Col>
+        <Col>
+          <Row></Row>
+          <Row>
+            <ListGroup>
+              <ListGroup.Item className="footerListItems">
+                <h2 className="kibusL">Políticas</h2>
+              </ListGroup.Item>
+              <ListGroup.Item className="footerListItems">
+                <p className="kibusS">Políticas de Privacidad</p>
+              </ListGroup.Item>
+              <ListGroup.Item className="footerListItems">
+                <p className="kibusS">Condiciones de uso</p>
+              </ListGroup.Item>
+              <ListGroup.Item className="footerListItems">
+                <p className="kibusS">Cookies</p>
+              </ListGroup.Item>
+              <ListGroup.Item className="footerListItems">
+                <p className="kibusS">FAQ</p>
+              </ListGroup.Item>
+            </ListGroup>
+          </Row>
+        </Col>
+        <Col>
+          <Image className="Facebook" src={Facebook} />
+        </Col>
+        <Col>
+          <Image className="Instagram" src={Instagram} />
+        </Col>
+        <Col>
+          <Image className="YouTube" src={YouTube} />
+        </Col>
+        <Col className="pagos">
+          <Row>
+            <h2 className="kibusL">Métodos de pago</h2>
+          </Row>
+          <Row>
+            <Image className="MetodosPago" src={MetodosPago} />
+          </Row>
+        </Col>
+      </Container>
+    </div>
   );
 }
