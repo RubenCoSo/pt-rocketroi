@@ -1,38 +1,201 @@
-.App {
-  text-align: center;
+.App.container {
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root {
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Styles for Kibus Website */
+
+.kibusXXL {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5vw;
+  line-height: 5vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.kibusXl {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+}
+
+.kibusL {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.52vw;
+  line-height: 1.94vw;
+}
+
+.kibusS {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.kibusBTN {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.11vw;
+  line-height: 1.25vw;
+  padding: 1.11vw 2.22vw;
+  margin-top: -0.4vw;
+  margin-bottom: 1vw;
+}
+
+/* TopBar */
+
+.kibusLogo {
+  width: 8.33vw;
+  height: 3.75vw;
+  margin-left: 5.5vw;
+  margin-top: 4.72vw;
+  margin-bottom: 3.5vw;
+}
+
+/* First Section */
+.fsTitle p {
+  width: 49.3vw;
+  height: 15vw;
+  margin-left: calc(50vw - 49.3vw / 2 - 19.79vw);
+  margin-top: 3.5vw;
+  margin-bottom: 1.11vw;
+}
+
+.dot {
+  color: #ee7333;
+  font-weight: bold;
+}
+
+.fsSubtitle h2 {
+  color: rgba(0, 0, 0, 0.6);
+  width: 45.27vw;
+  height: 5.83vw;
+  margin-left: calc(50vw - 45.27vw / 2 - 22.63vw);
+  margin-top: 1.11vw;
+  margin-bottom: 1.63vw;
+}
+
+button.btnReserva.btn.btn-primary {
+  color: white;
+  background-color: #ee7333;
+  border: solid 2px #ee7333;
+  border-radius: 1.94vw;
+  width: 15vw;
+  height: 3.47vw;
+  margin-left: 5.6vw;
+}
+
+button.btnMasInfo.btn.btn-primary {
+  color: #ee7333;
+  background-color: white;
+  border-radius: 1.94vw;
+  height: 3.47vw;
+  width: 18.5vw;
+  margin-left: 1.45vw;
+  display: flex;
+  border-color: #ee7333;
+}
+
+.arrow {
+  width: 1.11vw;
+  height: 1.11vw;
+  /* margin-left: 1.11vw; */
+  margin-bottom: -1vw;
+  margin-top: -1.11vw;
+}
+
+.fsImage {
+  width: 52.36vw;
+  margin-left: -4.83vw;
+  margin-top: -10vw;
+}
+
+.firstSection {
+  display: flex;
+}
+
+/* Products selection */
+
+.productSelection.container {
+  display: flex;
+}
+
+.productBox {
+  width: 88.95vw;
+  border: solid 1px black;
+  box-shadow: 0px 0.97vw 2.56vw 1.31vw rgba(126, 126, 126, 0.08);
+  border-radius: 1.38vw;
+  margin-left: 5.5vw;
+  /* margin-bottom: 7vw; */
+}
+
+.recipes {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.recipesImages {
+  width: 18.75vw;
+  background-color: transparent;
+}
+
+.productSelection p {
+  text-align: center;
+  background-color: transparent;
+}
+.productSelection h2 {
+  text-align: center;
+  background-color: transparent;
+}
+
+button.btnReceta.btn.btn-primary {
+  width: 9.02vw;
+  height: 2.43vw;
+  background: #d5dbe1;
+  border-radius: 1.56vw;
   color: white;
+  border-color: #d5dbe1;
 }
 
-.App-link {
-  color: #61dafb;
+.carousel {
+  width: 45vw;
+  height: 36vw;
+  margin-top: 7vw;
+  margin-left: 5.5vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.carouselImages {
+  border-radius: 1.56vw;
+  width: 45vw;
+  height: 36vw;
+}
+
+.productPres {
+  display: flex;
+}
+
+.row.productbtns {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: -6vw;
+}
+
+.productPressTxt {
+  margin-top: 19.37vw;
+  margin-left: 7.77vw;
+  width: 35vw;
 }
